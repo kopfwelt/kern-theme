@@ -2,5 +2,5 @@
 
 ## Contents
 * [Config](./config.md)
-* Elements
-* Layout
+* [Elements](./elements.md)
+* [Layout](./layout.md)
