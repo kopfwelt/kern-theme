@@ -1,0 +1,49 @@
+{
+  "name": "kern-theme",
+  "version": "0.0.1",
+  "description": "A blueprint theme based on kern framework",
+  "main": "index.css",
+  "scripts": {
+    "test": "ava",
+    "watch": "npm test -- --watch",
+    "docset": "node docset.js && cd docset && tar --exclude='.DS_Store' -cvzf kern.tgz kern.docset && cd .. && shipit production docset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sinnwell@github.com/kopfwelt/kern-theme.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "SUIT",
+    "Kern",
+    "Theme"
+  ],
+  "author": "Steve Sinnwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kopfwelt/kern-theme/issues"
+  },
+  "homepage": "https://github.com/kopfwelt/kern-theme#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "cssnext": "^1.8.4",
+    "docset-generator": "^0.2.2",
+    "git-rev": "^0.2.1",
+    "pify": "^2.3.0",
+    "postcss": "^5.2.8",
+    "postcss-calc": "^5.3.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-each": "^0.9.3",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^9.0.0",
+    "postcss-mixins": "^5.4.1",
+    "postcss-nested": "^1.0.0",
+    "showdown": "^1.5.5",
+    "suitcss-preprocessor": "^3.0.1"
+  },
+  "dependencies": {
+    "kern": "github:kopfwelt/kern"
+  }
+}

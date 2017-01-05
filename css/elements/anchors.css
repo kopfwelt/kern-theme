@@ -1,0 +1,10 @@
+/**
+ * Anchor
+ *
+ */
+
+a,
+a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
