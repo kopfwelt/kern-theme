@@ -6,7 +6,7 @@
   --space: 30px;
   --icon-spacing-horizontal-small: var(--space)/3;
   --icon-spacing-horizontal: var(--space)/1.5;
-  --icon-spacing-vertical-small: 7.5px;
+  --icon-spacing-vertical-small: var(--space)/4;
   --icon-spacing-vertical: var(--space)/2;
 }
 
@@ -14,13 +14,11 @@ svg {
   max-height: 100%;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"] {
   display: inline-block;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
-  fill: currentColor;
   width: 20px;
   height: 20px;
 
@@ -29,6 +27,22 @@ svg {
     height: 100%;
   }
 }
+
+/*
+ This is not working when it should
+[class*=" icon-"] {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}*/
 
 
 .Icon {
@@ -55,12 +69,12 @@ svg {
 .Icon-text {
   display: inline-block;
   align-self: center;
-  margin-left: var(--icon-spacing-horizontal-small);
+  margin-left: calc(var(--icon-spacing-horizontal-small));
   text-align: left;
   z-index: 1;
 
   @media (min-width: var(--layout-m)) {
-    margin-left: var(--icon-spacing-horizontal);
+    margin-left: calc(var(--icon-spacing-horizontal));
   }
 }
 
@@ -77,22 +91,22 @@ svg {
   order: -1;
   text-align: right;
   margin-left: 0;
-  margin-right: var(--icon-spacing-horizontal-small);
+  margin-right: calc(var(--icon-spacing-horizontal-small));
 
   @media (min-width: var(--layout-m)) {
     margin-left: 0;
-    margin-right: var(--icon-spacing-horizonta);
+    margin-right: calc(var(--icon-spacing-horizonta));
   }
 }
 
 .Icon-text--underneath {
   text-align: center;
-  margin-top: var(--icon-spacing-vertical-small);
+  margin-top: calc(var(--icon-spacing-vertical-small));
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: var(--layout-m)) {
-    margin-top: var(--icon-spacing-vertical);
+    margin-top: calc(var(--icon-spacing-vertical));
   }
 }
 
