@@ -1,12 +1,4 @@
 
 html {
-  @apply --font-arial-regular;
-  color: var(--text-color);
   background-color: var(--background-color);
-
-  /*
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  text-rendering: optimizeLegibility;
-  */
 }

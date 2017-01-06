@@ -80,6 +80,17 @@
   }
 }
 
+html {
+  @apply --font-arial-regular;
+  color: var(--text-color);
+
+  
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+
+}
+
 .type-title1 {
 
   @apply --type-title1;
