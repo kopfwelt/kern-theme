@@ -19,13 +19,6 @@ Button styles.
 <button class="ag-btn ag-btn--primary">Button</button>
 ```
 */
-$text-inputs-list: "input[type="color"]", "input[type="date"]", "input[type="datetime"]", "input[type="datetime-local"]", "input[type="email"]", "input[type="month"]", "input[type="number"]", "input[type="password"]", "input[type="search"]", "input[type="tel"]", "input[type="text"]", "input[type="time"]", "input[type="url"]", "input[type="week"]", "input:not([type])", "textarea";
-
-$all-text-inputs: assign-inputs($text-inputs-list);
-$all-text-inputs-active: assign-inputs($text-inputs-list, active);
-$all-text-inputs-focus: assign-inputs($text-inputs-list, focus);
-$all-text-inputs-hover: assign-inputs($text-inputs-list, hover);
-
 
 :root {
   --errorStyling {
@@ -34,29 +27,166 @@ $all-text-inputs-hover: assign-inputs($text-inputs-list, hover);
   }
 }
 
+/* all-text-inputs StateLess*/
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea {
 
-// Common styles for text inputs and buttons
-#{$all-text-inputs},
+}
+
+/* all-text-inputs State Active*/
+input[type="color"]:active,
+input[type="date"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="email"]:active,
+input[type="month"]:active,
+input[type="number"]:active,
+input[type="password"]:active,
+input[type="search"]:active,
+input[type="tel"]:active,
+input[type="text"]:active,
+input[type="time"]:active,
+input[type="url"]:active,
+input[type="week"]:active,
+input:not([type]):active,
+textarea:active {
+
+}
+
+/* all-text-inputs State focus*/
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input:not([type]):focus,
+textarea:focus {
+
+}
+
+/* all-text-inputs State hover*/
+input[type="color"]:hover,
+input[type="date"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="email"]:hover,
+input[type="month"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+input[type="time"]:hover,
+input[type="url"]:hover,
+input[type="week"]:hover,
+input:not([type]):hover,
+textarea:hover {
+
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
 select,
 label {
   padding: 1.3em 1.2em 1.35em;
   color: black;
-
-    transition: border-color .15s;
+  transition: border-color .15s;
 }
 
-// Focus and hover styles for text inputs
-#{$all-text-inputs-focus},
-#{$all-text-inputs-hover} {
+/* Focus and hover styles for text inputs*/
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
+input:not([type]):focus,
+textarea:focus,
+input[type="color"]:hover,
+input[type="date"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="email"]:hover,
+input[type="month"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="tel"]:hover,
+input[type="text"]:hover,
+input[type="time"]:hover,
+input[type="url"]:hover,
+input[type="week"]:hover,
+input:not([type]):hover,
+textarea:hover {
   outline: 0;
 }
 
-// Active styles for text inputs
-#{$all-text-inputs-active} {
-  // border: 1px solid blue;
+/* Active styles for text inputs*/
+input[type="color"]:active,
+input[type="date"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active,
+input[type="email"]:active,
+input[type="month"]:active,
+input[type="number"]:active,
+input[type="password"]:active,
+input[type="search"]:active,
+input[type="tel"]:active,
+input[type="text"]:active,
+input[type="time"]:active,
+input[type="url"]:active,
+input[type="week"]:active,
+input:not([type]):active,
+textarea:active {
+  border: 1px solid blue;
 }
 
-// Placeholder styles
+/* Placeholder styles*/
 input:-moz-placeholder,
 input::-moz-placeholder,
 input:-ms-input-placeholder,
@@ -69,14 +199,14 @@ label span {
 }
 
 .Form {
-  max-width: rem(400);
+  max-width: 400px;
   margin: auto;
 
-  textarea {
+  & textarea {
     border: 1px solid black;
   }
 
-  .Button {
+  & .Button {
     font-size: 13px;
     width: auto;
   }
@@ -87,15 +217,14 @@ label span {
 }
 
 /* Labels inside Inputs (visually) */
-
 .Form-group {
   border: 1px solid black;
 
-  label {
+  & label {
     padding-right: 0;
   }
 
-  input {
+  & input {
     border: 0;
   }
 }
@@ -106,40 +235,38 @@ label span {
   display: block;
   padding-left: 3.5em;
 
-  input {
+  & input {
     position: absolute;
     visibility: hidden;
     left: 0;
     top: 0.6em;
-    height: rem(30);
+    height: 30px;
     cursor: pointer;
-    &::before {
-      display: block;
-      position: absolute;
-      content: "";
-      border-radius: 50%;
-      height: rem(30);
-      width: rem(30);
-      border: 2px solid black;
+  }
+  & input::before {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
 
-      visibility: visible;
-      margin: auto;
-    }
-    &:checked,
-    &:hover {
-      &::after {
-        display: block;
-        position: absolute;
-        content: "";
-        border-radius: 50%;
-        top: rem(5);
-        left: rem(5);
-        height: rem(20);
-        width: rem(20);
-        background-color: black;
-        visibility: visible;
-      }
-    }
+    visibility: visible;
+    margin: auto;
+  }
+  & input:checked::after,
+  & input:hover::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    visibility: visible;
   }
 }
 
@@ -150,40 +277,40 @@ label span {
   height: 2em;
   cursor: pointer;
 
-  .icon-check {
+  & .icon-check {
     position: absolute;
     background-size: 15px;
     background-position: center;
-    width: rem(30);
-    height: rem(30);
+    width: 30px;
+    height: 30px;
     top: 0;
   }
 
-  input {
+  & input {
     position: absolute;
     visibility: hidden;
     cursor: pointer;
 
   }
-  input::before {
+  & input::before {
     display: block;
     position: absolute;
     content: "";
-    height: rem(30);
-    width: rem(30);
+    height: 30px;
+    width: 30px;
     border: 2px solid black;
     background: white;
     visibility: visible;
     margin: auto;
     z-index: 2;
   }
-  input::before:checked,
-  input::before:hover {
+  & input::before:checked,
+  & input::before:hover {
     background: transparent;
   }
-  label {
-    left: rem(40);
-    top: rem(7);
+  & label {
+    left: 40px;
+    top: 7px;
     padding: 0;
   }
 }
@@ -247,19 +374,18 @@ ul.parsley-error-list {
  */
 
 
-// Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc.
+/* Container used for styling the custom select, the buttom class below adds the bg gradient, corners, etc.*/
 .CustomSelect {
   position: relative;
   display: block;
   padding: 0;
 }
 
-// This is the native select, we"re making everything but the text invisible so we can see the button styles in the wrapper
+/* This is the native select, we"re making everything but the text invisible so we can see the button styles in the wrapper*/
 .CustomSelect select {
   width: 100%;
   margin: 0;
   background: none;
-  // border: 1px solid transparent;
   outline: none;
   box-sizing: border-box;
   /* Remove select styling */
@@ -267,12 +393,12 @@ ul.parsley-error-list {
   -webkit-appearance: none;
 }
 
-// Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select.
+/* Custom arrow sits on top of the select - could be an image, SVG, icon font, etc. or the arrow could just baked into the bg image on the select.*/
 .CustomSelect::after {
   position: absolute;
   content: "";
   display: inline-block;
-  width: rem(40);
+  width: 40px;
   height: 100%;
   background-color: black;
   background-image: url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -286,11 +412,11 @@ ul.parsley-error-list {
   top: 0;
   right: 0;
   z-index: 2;
-  // This hack make the select behind the arrow clickable in some browsers
+  /* This hack make the select behind the arrow clickable in some browsers*/
   pointer-events: none;
 }
 
-// Make sure options have normal weight
+/* Make sure options have normal weight*/
 .CustomSelect option {
   font-weight: normal;
 }
@@ -327,12 +453,12 @@ x:-o-prefocus,
   .CustomSelect {
     overflow: hidden;
   }
-  .CustomSelect select {
-  // it make the select bug in firefox
-  //   width: 120%;
-  // width: -moz-calc(100% + 3em);
-  //   width: calc(100% + 3em);
-  }
+  /*.CustomSelect select {
+    it make the select bug in firefox
+     width: 120%;
+     width: -moz-calc(100% + 3em);
+     width: calc(100% + 3em);
+  }*/
 }
 
 /* Firefox focus has odd artifacts around the text, this kills that. See https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-focusring */

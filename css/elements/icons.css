@@ -24,7 +24,7 @@ svg {
   width: 20px;
   height: 20px;
 
-  svg {
+  & svg {
     width: 100%;
     height: 100%;
   }
@@ -58,13 +58,15 @@ svg {
   margin-left: var(--icon-spacing-horizontal-small);
   text-align: left;
   z-index: 1;
+
   @media (min-width: var(--layout-m)) {
     margin-left: var(--icon-spacing-horizontal);
   }
 }
+
 .Icon--underneath {
   flex-direction: column;
-  i {
+  & i {
     margin: auto;
   }
 }
@@ -76,16 +78,19 @@ svg {
   text-align: right;
   margin-left: 0;
   margin-right: var(--icon-spacing-horizontal-small);
+
   @media (min-width: var(--layout-m)) {
     margin-left: 0;
     margin-right: var(--icon-spacing-horizonta);
   }
 }
+
 .Icon-text--underneath {
   text-align: center;
   margin-top: var(--icon-spacing-vertical-small);
   margin-left: auto;
   margin-right: auto;
+
   @media (min-width: var(--layout-m)) {
     margin-top: var(--icon-spacing-vertical);
   }

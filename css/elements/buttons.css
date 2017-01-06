@@ -23,15 +23,12 @@ a.Button {
  * UI states
  */
 
-/*
-:matches(:hover, :focus) .Button{
+
+.Button:matches(:hover, :focus){
   text-decoration: none;
 }
-*/
 
-/*
 .Button:active {}
-*/
 
 .Button:disabled {
   cursor: default;

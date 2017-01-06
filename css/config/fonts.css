@@ -1,26 +1,27 @@
 /**
  * Fonts
  *
- * Webfonts we are using
  */
 
-@define-mixin font-arial-regular {
-  font-family: "arial", sans-serif;
-  font-weight: 400;
-}
-
-@define-mixin font-arial-bold {
-  font-family: "arial", sans-serif;
-  font-weight: 700;
-}
-
-@define-mixin font-lato {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-}
-
 :root {
+  /**
+   * Webfonts we are using
+   */
+  --font-arial-regular {
+    font-family: "arial", sans-serif;
+    font-weight: 400;
+  }
+
+  --font-arial-bold {
+    font-family: "arial", sans-serif;
+    font-weight: 700;
+  }
+
+  --font-lato {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+  }
 
   /**
    * Root sizes
