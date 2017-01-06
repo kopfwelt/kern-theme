@@ -4,7 +4,7 @@
 
 .SiteHeader {
 
-  @apply font-arial-bold;
+  @apply --font-arial-bold;
 
   & .Bar {
     font-size: 14px;
