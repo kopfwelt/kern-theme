@@ -12,11 +12,3 @@
   --white: #fff;
   --black: #000;
 }
-
-@custom-media --primary-color: red;
-@custom-media --background-color: white;
-@custom-media --text-color: black;
-@custom-media --overlay-bg: gray;
-@custom-media --error-validation: red;
-@custom-media --white: #fff;
-@custom-media --black: #000;
