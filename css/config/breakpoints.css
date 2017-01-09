@@ -12,6 +12,15 @@
 }
 
 
+@custom-media  --layout-s (min-width:414px);
+@custom-media  --layout-sm (min-width:660px);
+@custom-media  --layout-m (min-width:768px);
+@custom-media  --layout-ml (min-width:1024px);
+@custom-media  --layout-l (min-width:1280px);
+@custom-media  --layout-xl (min-width:1440px);
+
+
+
 @custom-media --viewport-s (min-width: 0px) and (max-width: 414ppx);
 @custom-media --viewport-sm (min-width: 415px) and (max-width: 660px);
 @custom-media --viewport-m (min-width: 661px) and *(max-width: 768px) ;
