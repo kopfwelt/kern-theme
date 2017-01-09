@@ -17,7 +17,7 @@
     & .Bar-item:first-of-type {
       padding-left: var(--spacing-s);
 
-      @media (min-width: var(--layout-ml)) {
+      @media (--layout-ml) {
         padding-left: var(--spacing-m);
       }
     }
@@ -31,7 +31,7 @@
   & .Bar-item--center {
     display: none;
 
-    @media (min-width: var(--layout-sm)) {
+    @media (--layout-sm) {
       display: block;
       display: flex;
     }
@@ -40,7 +40,7 @@
   & .Bar-item:last-of-type {
     padding-right: var(--spacing-s);
 
-    @media (min-width: var(--layout-ml)) {
+    @media (--layout-ml) {
       padding-right: var(--spacing-sm);
     }
   }
@@ -57,7 +57,7 @@
     font-size: 18px;
     min-height: 50px;
 
-    @media (min-width: var(--layout-sm)) {
+    @media (--layout-sm) {
       min-height: 78px;
     }
   }
@@ -66,7 +66,7 @@
   .Bar--horizontal .Nav-item {
     height: 50px;
 
-    @media (min-width: var(--layout-sm)) {
+    @media (--layout-sm) {
       height: 78px;
     }
   }
@@ -74,7 +74,7 @@
   .Bar-item:last-of-type {
     padding-right: var(--spacing-s);
 
-    @media (min-width: var(--layout-ml)) {
+    @media (--layout-ml) {
       padding-right: var(--spacing-sm);
     }
   }

@@ -8,7 +8,7 @@
     background-color: var(--overlay-bg);
     min-height: 50px;
 
-    @media (max-width: var(--layout-m)) {
+    @media (max-width: 768px) {
       flex-direction: column;
 
       & .Bar-item {
@@ -34,7 +34,7 @@
       }
     }
 
-    @media (min-width: var(--layout-m)) {
+    @media (--layout-m) {
       min-height: 80px;
     }
   }
@@ -42,7 +42,7 @@
   & .Bar-item,
   & .Bar--horizontal .Nav-item {
 
-    @media (min-width: var(--layout-m)) {
+    @media (--layout-m) {
       min-height: 80px;
     }
   }
@@ -54,7 +54,7 @@
   & .Bar-item:last-of-type {
     padding-right: var(--spacing-s);
 
-    @media (min-width: var(--layout-ml)) {
+    @media (--layout-ml) {
       padding-right: var(--spacing-sm);
     }
   }

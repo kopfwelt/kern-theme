@@ -95,7 +95,7 @@ svg {
 
   @media (min-width: var(--layout-m)) {
     margin-left: 0;
-    margin-right: calc(var(--icon-spacing-horizonta));
+    margin-right: calc(var(--icon-spacing-horizontal));
   }
 }
 
