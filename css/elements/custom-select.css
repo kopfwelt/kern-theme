@@ -61,11 +61,7 @@
   width: 40px;
   height: 100%;
   background-color: black;
-  background-image: url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="24.09px" height="24.09px" viewBox="0 0 24.09 24.09" enable-background="new 0 0 24.09 24.09" xml:space="preserve">
-<polygon fill="#FFFFFF" points="24.102,7.162 12.045,19.219 -0.011,7.162 2.3,4.873 12.045,14.609 21.801,4.873 "/>
-</svg>
-");
+  background-image: url("data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="24.09px" height="24.09px" viewBox="0 0 24.09 24.09" enable-background="new 0 0 24.09 24.09" xml:space="preserve"><polygon fill="#FFFFFF" points="24.102,7.162 12.045,19.219 -0.011,7.162 2.3,4.873 12.045,14.609 21.801,4.873 "/></svg>");
   background-size: 20px;
   background-position: center;
   background-repeat: no-repeat;

@@ -41,7 +41,7 @@
     font-size: 25px;
     line-height: 1.25;
 
-    @media (min-width: var(--layout-sm)) {
+    @media (--layout-sm) {
       font-size: 40px;
     }
   }
@@ -84,7 +84,7 @@ html {
   @apply --font-arial-regular;
   color: var(--text-color);
 
-  
+
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   text-rendering: optimizeLegibility;

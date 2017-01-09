@@ -54,13 +54,13 @@ svg {
   height: 30px;
   background-size: 30px 30px;
 
-  @media (min-width: var(--layout-m)) {
+  @media (--layout-m) {
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
   }
 
-  @media (min-width: var(--layout-l) {
+  @media (--layout-l) {
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
@@ -73,7 +73,7 @@ svg {
   text-align: left;
   z-index: 1;
 
-  @media (min-width: var(--layout-m)) {
+  @media (--layout-m) {
     margin-left: calc(var(--icon-spacing-horizontal));
   }
 }
@@ -93,7 +93,7 @@ svg {
   margin-left: 0;
   margin-right: calc(var(--icon-spacing-horizontal-small));
 
-  @media (min-width: var(--layout-m)) {
+  @media (--layout-m) {
     margin-left: 0;
     margin-right: calc(var(--icon-spacing-horizontal));
   }
@@ -105,7 +105,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: var(--layout-m)) {
+  @media (--layout-m) {
     margin-top: calc(var(--icon-spacing-vertical));
   }
 }
